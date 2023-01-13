@@ -1,0 +1,124 @@
+*
+  z-index: 10
+.complete
+  display: flex
+  justify-content: space-between
+
+
+  img
+    position: inherit
+    height: 200px
+    width: 200px
+    margin-right: 10px
+    margin-top: 10px
+
+
+
+.wave
+  img
+    width: 100%
+    height: 50%
+    margin: 0
+    position: absolute
+
+.navbar
+  font-family: "Josefin-Sans"
+  font-weight: 600
+  font-size: 25
+  height: 60px
+  .container-fluid
+    width: 100%
+
+@media screen and (max-width: 990px)
+  .complete
+    img
+      position: inherit
+      height: 150px
+      width: 150px
+      z-index: -10
+
+  .navbar
+    height: 70px
+  .navbar-collapse
+    position: relative
+    background: #fdc10fe9
+    width: 700px
+    height: 100%
+    z-index: 10
+    align-items: center
+
+    .nav-link
+      width: 100%
+      padding: 20px 0
+      text-align: center
+
+  .wave
+      img
+        height: 45%
+
+
+@media screen and (max-width: 700px)
+  .complete
+
+    img
+      position: inherit
+      height: 100px
+      width: 100px
+
+  .navbar-collapse
+    width: 500px
+    height: 100%
+    .nav-link
+      padding: 15px 0
+
+  .wave
+    img
+      height: 40%
+
+@media screen and (max-width: 780px)
+  .navbar-collapse
+    width: 300px
+    height: 100%
+    .nav-link
+      padding: 10px 0
+
+  .wave
+    img
+      height: 30%
+
+@media screen and (max-width: 600px)
+  .complete
+    img
+      height: 80px
+      width: 80px
+  .navbar-collapse
+    width: 300px
+    height: 100%
+    .nav-link
+      padding: 10px 0
+
+  .wave
+    img
+      height: 20%
+
+@media screen and (max-width: 450px)
+  .complete
+    img
+      height: 60px
+      width: 60px
+    .navbar-toggler-icon
+      height: 20px
+      width: 20px
+
+
+
+
+
+
+
+
+
+
+
+
+

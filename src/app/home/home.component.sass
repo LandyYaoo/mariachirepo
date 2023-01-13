@@ -1,0 +1,205 @@
+app-header
+  position: absolute
+  width: 100%
+  height: 90%
+
+*
+  background: black
+  font-family: "Josefin-Sans"
+
+img
+  position: relative
+  width: 100%
+  top: 0px
+
+h1
+  margin: 0
+  padding: 20px 0
+  position: relative
+  text-align: center
+  color: #ffffff
+  font-weight: 400
+
+.slider
+  cursor: pointer
+  background: black
+  padding: 20px 0
+
+.mySwiper
+  img
+    width: 200px
+    height: 200px
+    border-radius: 10%
+
+form
+  position: relative
+  justify-content: center
+  padding: 20px 0
+  text-decoration: none
+  display: flex
+
+  a
+    display: flex
+    position: relative
+    background-color: #FDC20F
+    color: black
+    border-color: #FDC20F
+    font-weight: bolder
+
+.diferenciales
+  display: flex
+  justify-content: space-between
+  flex-flow: row wrap
+  padding: 40px 0
+  align-content: center
+
+
+  .icon-padding
+    padding: 10px
+    display: flex
+    text-align: center
+
+    .iconify
+      font-size: 100px
+      background: #FDC20F
+      border-radius: 50%
+      padding: 20px
+  h2
+    padding: 20px 10px
+    color: white
+    text-align: center
+
+.feedbacks
+  display: flex
+  justify-content: center
+
+.feedback-swiper
+  text-align: center
+
+.heading
+  border-bottom: 1px solid white
+  border-top:1px solid white
+  width: 400px
+  font-size: 33px
+  padding: 0
+
+.user
+  display: flex
+  flex-flow: row wrap
+  background: #fff
+  padding: 20px
+  margin: 80px 200px
+  align-items: center
+  justify-content: center
+  border: 5px solid #055da9c3
+  border-radius: 25px
+  img
+    border-radius: 50%
+.costumer
+  display: flex
+  background: white
+  align-items: center
+  justify-content: center
+  .iconify
+    display: flex
+    justify-content: space-around
+    background: white
+    font-size: 30px
+
+.user-info
+  background: white
+  margin: 15px
+  border-radius: 25px
+  padding: 15px
+  .stars
+    background: white
+    .iconify
+      background: white
+      color: #FDC20F
+      font-size: 30px
+  h3
+    background: white
+    font-weight: 600
+  p
+    background: white
+    font-size: 25px
+
+
+
+@media screen and (min-width: 800px)
+  .icon-padding
+    display: flex
+    flex-flow: column-reverse wrap
+    text-align: center
+    .iconify
+      align-self: center
+
+
+@media screen and (max-width: 990px)
+  .mySwiper
+    img
+      width: 150px
+      height: 150px
+  .diferenciales
+    flex-direction: column-reverse
+
+
+@media screen and (max-width: 800px)
+  .mySwiper
+    img
+      width: 110px
+      height: 110px
+  .user
+    padding: 30px
+    margin: 60px
+  .user-info
+    margin: 12px
+    padding: 12px
+    .stars
+      .iconify
+        font-size: 25px
+    h3
+      font-size: 25px
+      font-weight: 600
+    p
+      font-size: 20px
+
+
+@media screen and (max-width: 540px)
+  .mySwiper
+    img
+      width: 85px
+      height: 85px
+
+  .user
+    padding: 20px
+    margin: 40px
+  .user-info
+    margin: 10px
+    padding: 10px
+    .stars
+      .iconify
+        font-size: 20px
+    h3
+      font-weight: 600
+      font-size: 20px
+    p
+      font-size: 14px
+
+@media screen and (max-width: 450px)
+  .mySwiper
+    img
+      width: 65px
+      height: 65px
+  .diferenciales
+    h2
+      font-size: 22px
+
+  .icon-padding
+    display: flex
+    flex-flow: column-reverse wrap
+    text-align: center
+    .iconify
+      align-self: center
+
+

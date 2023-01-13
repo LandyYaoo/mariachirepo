@@ -1,0 +1,20 @@
+<i class="wave"><img src="assets/img/Wave.png" alt="Wave"></i>
+<div class="complete">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <button class="navbar-toggler" (click)="mostrar = !mostrar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">CONOCE NUESTROS PLANES</a>
+          <a class="nav-link" href="#">SOBRE NOSOTROS</a>
+          <a class="nav-link" href="#">CONTACTANOS</a>
+          <a class="nav-link" href="#">GALERIA</a>
+          <i class="nav-link" href="#" *ngIf="!mostrar"><img src="assets/img/Logo.png" alt="Logo"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <i ><img *ngIf="mostrar" src="assets/img/Logo.png"  alt="Logo"></i>
+</div>

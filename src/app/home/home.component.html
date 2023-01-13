@@ -1,0 +1,104 @@
+<app-header></app-header>
+<i><img src="assets/img/1marachi.jpg" alt=""></i>
+<h1>Crea tus mejores recuerdos con nosotros</h1>
+<div class="slider">
+  <swiper
+    [slidesPerView]="5"
+    [loop]="true"
+    [autoplay]="{
+      delay: 3500,
+      disableOnInteraction: false
+    }"
+    [freeMode]="true"
+    [spaceBetween]="10"
+    [pagination]="{
+      clickable: true
+    }"
+    class="mySwiper"
+  >
+    <ng-template swiperSlide><img src="assets/img/boda.png" alt=""></ng-template>
+    <ng-template swiperSlide><img src="assets/img/cumpleaños.png" alt=""></ng-template>
+    <ng-template swiperSlide><img src="assets/img/madre.png" alt=""></ng-template>
+    <ng-template swiperSlide><img src="assets/img/slide1.jpeg" alt=""></ng-template>
+    <ng-template swiperSlide><img src="assets/img/slide2.jpeg" alt=""></ng-template>
+    <ng-template swiperSlide><img src="assets/img/slide3.jpeg" alt=""></ng-template>
+    <ng-template swiperSlide><img src="assets/img/slide4.jpeg" alt=""></ng-template>
+    <ng-template swiperSlide><img src="assets/img/slide5.jpeg" alt=""></ng-template>
+  </swiper>
+</div>
+<div class="conoce-planes">
+  <form>
+    <a  class="btn btn-primary">CONOCE NUESTROS PLANES</a>
+  </form>
+</div>
+<div class="diferenciales">
+  <div class="icon-padding">
+    <span class="iconify" data-icon="mdi:alarm-clock-check" style="color: black;"></span>
+    <h2>PUNTUALIDAD</h2>
+  </div>
+  <div class="icon-padding">
+    <span class="iconify" data-icon="mdi:check-decagram" style="color: black;"></span>
+    <h2>CALIDAD</h2>
+  </div>
+  <div class="icon-padding">
+    <span class="iconify" data-icon="foundation:torso-business" style="color: black;"></span>
+    <h2>PROFESIONALISMO</h2>
+  </div>
+</div>
+
+<div class="feedbacks">
+  <h1 class="heading"> OPINIONES DE CLIENTES </h1>
+</div>
+  <swiper [navigation]="true"
+  [loop]="true"
+  class="mySwiper"
+  [autoplay]="{delay: 2000, disableOnInteraction: true}"
+  [freeMode]="true"
+  [pagination]="{clickable: true}">
+
+    <ng-template swiperSlide>
+      <div class="user">
+        <img src="assets/img/pamelafb.jpg" alt="">
+        <div class="user-info">
+          <div class="costumer">
+            <span class="iconify" data-icon="logos:facebook"></span>
+            <h3>JENNY SEPULVEDA</h3>
+          </div>
+          <div class="stars">
+            <span class="iconify" data-icon="material-symbols:star"></span>
+            <span class="iconify" data-icon="material-symbols:star"></span>
+            <span class="iconify" data-icon="material-symbols:star"></span>
+            <span class="iconify" data-icon="material-symbols:star"></span>
+            <span class="iconify" data-icon="material-symbols:star"></span>
+          </div>
+          <p>"El mejor Mariachi, los favoritos de mi madre Q.E.P.D. FELIZ NAVIDAD Y QUE DIOS LOS COLME DE BENDICIONES...SON UNICOS🎉🎊🎄🎁🎊🎐"</p>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="user">
+        <img src="assets/img/pamelafb.jpg" alt="">
+        <div class="user-info">
+          <div class="costumer">
+            <span class="iconify" data-icon="logos:facebook"></span>
+            <h3>PAMELA ALEJANDRA ORTIZ</h3>
+          </div>
+          <div class="stars">
+            <span class="iconify" data-icon="material-symbols:star"></span>
+            <span class="iconify" data-icon="material-symbols:star"></span>
+            <span class="iconify" data-icon="material-symbols:star"></span>
+            <span class="iconify" data-icon="material-symbols:star"></span>
+            <span class="iconify" data-icon="material-symbols:star-half"></span>
+          </div>
+          <p>"Gracias por tan lindos momentos que sigan cosechando alegria, serenatas y exito en sus vidas"</p>
+        </div>
+      </div>
+    </ng-template>
+
+  </swiper>
+
+<app-footer></app-footer>
+
+
+
+
